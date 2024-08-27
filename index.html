@@ -11,20 +11,20 @@
     <script src="lib/jquery-3.7.1.min.js"></script>
     <script src="lib/fullpage.js"></script>
 
-    <script type="text/javascript">
-        var myFullpage = new fullpage('#fullpage', {
-            anchors: ['firstPage', 'secondPage', '3rdPage'],
-            sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
-            navigation: true,
-            navigationPosition: 'right',
-            navigationTooltips: ['First page', 'Second page', 'Third and last page'],
-            responsiveWidth: 900,
-            afterResponsive: function (isResponsive) {
-
+    <script>
+        function openModal(src) {
+                var modal = document.getElementById("myModal");
+                var modalImg = document.getElementById("img01");
+                modal.style.display = 'block';
+                modalImg.src = src;
             }
 
-        });
+            function colseModal() {
+                var modal = document.getElementById("myMoal");
+                modal.style.display = 'none';
+            }
 
+        
 
     </script>
 </head>
@@ -394,65 +394,69 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <figure>
-                                    <img src="img/0423-도형+도형합치기+정렬.jpg" alt="테마파크" onclick="window.open(this.src)">
+                                    <img src="img/0423-도형+도형합치기+정렬.jpg" alt="테마파크" style="cursor: pointer;" onclick="openModal(this.src)">
                                 </figure>
                             </div><!-- swiper-slide end -->
 
                             <div class="swiper-slide">
                                 <figure>
-                                    <img src="img/0423-놀이동산.jpg" alt="놀이동산" onclick="window.open(this.src)">
+                                    <img src="img/0423-놀이동산.jpg" alt="놀이동산" style="cursor: pointer;" onclick="openModal(this.src)">
                                 </figure>
                             </div><!-- swiper-slide end -->
 
                             <div class="swiper-slide">
                                 <figure>
                                     <img src="img/0417-인스타그램-디자인--02.jpg" alt="인스타그램 디자인"
-                                        onclick="window.open(this.src)">
+                                    style="cursor: pointer;" onclick="openModal(this.src)">
                                 </figure>
                             </div><!-- swiper-slide end -->
 
                             <div class="swiper-slide">
                                 <figure>
-                                    <img src="img/02-유럽여행상세페이지.jpg" alt="유럽여행 상세페이지" onclick="window.open(this.src)">
+                                    <img src="img/02-유럽여행상세페이지.jpg" alt="유럽여행 상세페이지" style="cursor: pointer;" onclick="openModal(this.src)">
                                 </figure>
                             </div><!-- swiper-slide end -->
 
                             <div class="swiper-slide">
                                 <figure>
                                     <img src="img/화장품_상세페이지_도형합치기+그라데이션.jpg" alt="화장품 상세페이지"
-                                        onclick="window.open(this.src)">
+                                    style="cursor: pointer;" onclick="openModal(this.src)" >
                                 </figure>
                             </div><!-- swiper-slide end -->
 
                             <div class="swiper-slide">
                                 <figure>
-                                    <img src="img/듀와뵤가게.png" alt="일러스트 이미지 " onclick="window.open(this.src)">
+                                    <img src="img/듀와뵤가게.png" alt="일러스트 이미지 " style="cursor: pointer;" onclick="openModal(this.src)" >
                                 </figure>
                             </div><!-- swiper-slide end -->
 
                             <div class="swiper-slide">
                                 <figure>
                                     <img src="img/animathion/해달-조개-뿌시기.gif" loop="infinite" alt="해달"
-                                        onclick="window.open(this.src)">
+                                    style="cursor: pointer;" onclick="openModal(this.src)">
                                 </figure>
                             </div><!-- swiper-slide end -->
 
                             <div class="swiper-slide">
                                 <figure>
                                     <img src="img/animathion/듀와 듀달.gif" loop="infinite" alt="해달"
-                                        onclick="window.open(this.src)">
+                                    style="cursor: pointer;" onclick="openModal(this.src)">
                                 </figure>
                             </div><!-- swiper-slide end -->
 
                             <div class="swiper-slide">
                                 <figure>
                                     <img src="img/animathion/왔다갔다.gif" loop="infinite" alt="캐릭터"
-                                        onclick="window.open(this.src)">
+                                    style="cursor: pointer;" onclick="openModal(this.src)">
                                 </figure>
                             </div><!-- swiper-slide end -->
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
+                </div>
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="colseModal()">&times;</span>
+                    <img class="madal-content" id="img01">
                 </div>
             </div>
 
@@ -512,6 +516,8 @@
                     disableOnInteraction: false,
                 },
             });
+
+            
         </script>
 </body>
 
