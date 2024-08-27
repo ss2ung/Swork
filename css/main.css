@@ -166,6 +166,7 @@ background: linear-gradient(180deg, rgba(94,94,94,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 #slide1 .info-list .info {
+    margin-top: 50px;
     width: 40%;
     display: flex;
     column-gap: 60px;
@@ -196,8 +197,8 @@ background: linear-gradient(180deg, rgba(94,94,94,1) 0%, rgba(0,0,0,1) 100%);
 
 #slide1 .info-list .info:nth-child(4) {
     position: absolute;
-    top: 170px;
-    right: 129px;
+    top: 150px;
+    right: 150px;
 }
 
 #slide2 {
@@ -241,17 +242,19 @@ background: linear-gradient(180deg, rgba(94,94,94,1) 0%, rgba(0,0,0,1) 100%);
 #slide2 .project .box p {
     font-size: 60px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #025ADF;
 }
 
 #slide2 .project .box h3 {
     font-size:70px;
     font-weight: 600;
-    margin-bottom: 15px;
+    padding-bottom: 18px;
 }
 #slide2 .project .box span {
+    display: block;
     font-size: 30px;
+   line-height: 1.3;
 }
 
 
@@ -328,9 +331,16 @@ background: linear-gradient(180deg, rgba(94,94,94,1) 0%, rgba(0,0,0,1) 100%);
     padding: 15px;
     background-color: #ddd;
     border-radius: 50px;
+    transition: 0.5s;
 }
 
 #slide2 .project .swiper-slide .txt ul li:first-child {
+    background-color: #333;
+    color: #fff;
+    
+}
+
+#slide2 .project .swiper-slide .txt ul li:hover {
     background-color: #025ADF;
     color: #fff;
 }
@@ -385,6 +395,7 @@ background: linear-gradient(180deg, rgba(94,94,94,1) 0%, rgba(0,0,0,1) 100%);
  #section2{
     color: #fff;
     margin: 0 auto;
+   
  }
 
  #section2 h3 {
@@ -411,6 +422,7 @@ background: linear-gradient(180deg, rgba(94,94,94,1) 0%, rgba(0,0,0,1) 100%);
     font-size: 30px;
     margin-bottom: 15px;
  }
+
  #section2 .myinfo ul li:nth-child(3) {
     font-size: 28px;
     margin-bottom: 15px;
@@ -443,6 +455,28 @@ background: linear-gradient(180deg, rgba(94,94,94,1) 0%, rgba(0,0,0,1) 100%);
     top: 50%;
     left: -30px;
     transform: translateY(-50%);
+ }
+
+ #section2 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 50px;
+    border: 1px solid #fff;
+    background-color: #000;
+    border-radius: 50px;
+    color: #fff;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+   transition: 0.5s;
+ }
+
+ #section2 a:hover {
+    background-color: #025ADF;
+    border: 0;
  }
 
 
