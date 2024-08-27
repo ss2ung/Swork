@@ -258,6 +258,8 @@ background: linear-gradient(180deg, rgba(94,94,94,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 
+
+
 #slide2 .project .swiper-slide {
     width: 600px !important;
     height: 614px;
@@ -265,7 +267,6 @@ background: linear-gradient(180deg, rgba(94,94,94,1) 0%, rgba(0,0,0,1) 100%);
     color: #333;
     position: relative;
     border-radius: 25px;
-    
     
 }
 
@@ -345,6 +346,15 @@ background: linear-gradient(180deg, rgba(94,94,94,1) 0%, rgba(0,0,0,1) 100%);
     color: #fff;
 }
 
+#slide2 .swiper-button-prev::after,
+#slide2 .swiper-button-next::after {
+    display: none;
+}
+
+
+
+
+
 #slide3 {
     color: #fff;
     margin: 150px auto 0;
@@ -379,6 +389,7 @@ background: linear-gradient(180deg, rgba(94,94,94,1) 0%, rgba(0,0,0,1) 100%);
  .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: 50px;
  }
+
 
  .swiper-pagination-bullet-active {
     background-color: #025ADF;
