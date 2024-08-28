@@ -19,13 +19,10 @@
                 modalImg.src = src;
             }
 
-            function colseModal() {
-                var modal = document.getElementById("myMoal");
+            function closeModal() {
+                var modal = document.getElementById("myModal");
                 modal.style.display = 'none';
             }
-
-        
-
     </script>
 </head>
 
@@ -47,12 +44,15 @@
 
             <div class="visaul">
                 <h2>Design Works</h2>
+                <img src="img/main-w-icom.png" alt="me"/>
             </div><!-- visaul end -->
 
             <div class="icon">
-                <figure>
-                    <img src="img/icon/bottom.svg" alt="아래로 스크롤">
-                </figure>
+                <a href="#slide1">
+                    <figure>
+                        <img src="img/icon/bottom.svg" alt="아래로 스크롤">
+                    </figure>
+                </a>
             </div><!-- icon end -->
         </div><!-- #section0 end -->
 
@@ -191,13 +191,17 @@
                                 <p>01</p>
                                 <h3>WEB<br>Design</h3>
                                 <span>반응형, 적응형 <br>웹디자인 작업물입니다.</span>
+                                <div class="swiper-buttons-wrapper">
+                                    <img src="img/icon/prev.svg" class="web-swiper-button-prev"/>
+                                    <img src="img/icon/next.svg" class="web-swiper-button-next"/>
+                                </div>
                             </div><!-- box end -->
-                            <div class="swiper mySwiper">
+                            <div class="swiper mySwiper webDesign">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <p>적응형</p>
                                         <figure>
-                                            <img src="img/web/모모스커피-컴퓨터목업.png" alt="컴퓨터 목업">
+                                            <img src="img/web/project-web-01.png" alt="컴퓨터 목업">
                                         </figure>
                                         <div class="txt">
                                             <h4>모모스 커피</h4>
@@ -214,7 +218,7 @@
                                     <div class="swiper-slide">
                                         <p>적응형</p>
                                         <figure>
-                                            <img src="img/web/옵스-컴튜터목업.png" alt="컴퓨터 목업">
+                                            <img src="img/web/project-web-02.png" alt="컴퓨터 목업">
                                         </figure>
                                         <div class="txt">
                                             <h4>OPS</h4>
@@ -231,7 +235,7 @@
                                     <div class="swiper-slide">
                                         <p>반응형</p>
                                         <figure>
-                                            <img src="img/web/부산현대미술관-Web컴퓨터목업.jpg" alt="컴퓨터 목업">
+                                            <img src="img/web/project-web-03.jpg" alt="컴퓨터 목업">
                                         </figure>
                                         <div class="txt">
                                             <h4>부산 현대미술관</h4>
@@ -248,7 +252,7 @@
                                     <div class="swiper-slide">
                                         <p>반응형</p>
                                         <figure>
-                                            <img src="img/web/스킨푸드-컴퓨터목업.png" alt="컴퓨터 목업">
+                                            <img src="img/web/project-web-04.png" alt="컴퓨터 목업">
                                         </figure>
                                         <div class="txt">
                                             <h4>스킨푸드</h4>
@@ -270,11 +274,11 @@
 
                         <div class="project">
 
-                            <div class="swiper mySwiper">
+                            <div class="swiper mySwiper appDesign">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <figure>
-                                            <img src="img/moblie/맥도날드-목업 1.png" alt="맥도날드목업">
+                                            <img src="img/moblie/project-app-01.png" alt="맥도날드목업">
                                         </figure>
                                         <div class="txt">
                                             <h4>맥도날드</h4>
@@ -292,7 +296,7 @@
 
                                     <div class="swiper-slide">
                                         <figure>
-                                            <img src="img/moblie/담자_목업 1.png" alt="담자목업">
+                                            <img src="img/moblie/project-app-02.png" alt="담자목업">
                                         </figure>
                                         <div class="txt">
                                             <h4>담자</h4>
@@ -310,7 +314,7 @@
 
                                     <div class="swiper-slide">
                                         <figure>
-                                            <img src="img/moblie/플랜투-목업.png" alt="플랜투목업">
+                                            <img src="img/moblie/project-app-03.png" alt="플랜투목업">
                                         </figure>
                                         <div class="txt">
                                             <h4>Plan.to</h4>
@@ -333,6 +337,10 @@
                                 <p>02</p>
                                 <h3>APP<br>Design</h3>
                                 <span>앱 기획, 리디자인 <br>작업물입니다.</span>
+                                <div class="swiper-buttons-wrapper">
+                                    <img src="img/icon/prev.svg" class="app-swiper-button-prev"/>
+                                    <img src="img/icon/next.svg" class="app-swiper-button-next"/>
+                                </div>
                             </div><!-- box end -->
                         </div><!-- project end -->
                         <div class="project">
@@ -341,12 +349,12 @@
                                 <h3>Motion<br>Design</h3>
                                 <span>SLBS, 졸업작품 영상디자인 <br>작업물입니다.</span>
                             </div><!-- box end -->
-                            <div class="swiper mySwiper">
+                            <div class="swiper mySwiper motionDesign">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
 
                                         <figure>
-                                            <img src="img/moblie/SLBS-영상작업물.png" alt="SLBS 목업">
+                                            <img src="img/moblie/project-motion-01.png" alt="SLBS 목업">
                                         </figure>
                                         <div class="txt">
                                             <h4>SLBS</h4>
@@ -367,14 +375,14 @@
                                     <div class="swiper-slide">
 
                                         <figure>
-                                            <img src="img/web/졸업작품-영상.png" alt="졸업작품 목업">
+                                            <img src="img/web/project-motion-02.png" alt="졸업작품 목업">
                                         </figure>
                                         <div class="txt">
-                                            <h4>OPS</h4>
+                                            <h4>SAVE</h4>
                                             <p>청소년쉼터에 대한 인포그래픽 영상을 제작 했으며,
                                                 디자인과 에펙 작업 100% 참여했습니다.</p>
                                             <ul>
-                                                <li><a href="#">Play</a></li>
+                                                <li><a href="https://url.kr/i3h263">Play</a></li>
                                                 <li><a href="#">Process</a></li>
                                             </ul>
                                         </div><!-- txt end -->
@@ -394,59 +402,54 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <figure>
-                                    <img src="img/0423-도형+도형합치기+정렬.jpg" alt="테마파크" style="cursor: pointer;" onclick="openModal(this.src)">
+                                    <img src="img/Design-01.jpg" alt="테마파크" style="cursor: pointer;" onclick="openModal(this.src)">
                                 </figure>
                             </div><!-- swiper-slide end -->
 
                             <div class="swiper-slide">
                                 <figure>
-                                    <img src="img/0423-놀이동산.jpg" alt="놀이동산" style="cursor: pointer;" onclick="openModal(this.src)">
+                                    <img src="img/Design-02.jpg" alt="놀이동산" style="cursor: pointer;" onclick="openModal(this.src)">
                                 </figure>
                             </div><!-- swiper-slide end -->
 
                             <div class="swiper-slide">
                                 <figure>
-                                    <img src="img/0417-인스타그램-디자인--02.jpg" alt="인스타그램 디자인"
+                                    <img src="img/Design-03.jpg" alt="인스타그램 디자인"
                                     style="cursor: pointer;" onclick="openModal(this.src)">
                                 </figure>
                             </div><!-- swiper-slide end -->
 
                             <div class="swiper-slide">
                                 <figure>
-                                    <img src="img/02-유럽여행상세페이지.jpg" alt="유럽여행 상세페이지" style="cursor: pointer;" onclick="openModal(this.src)">
+                                    <img src="img/Design-04.jpg" alt="유럽여행 상세페이지" style="cursor: pointer;" onclick="openModal(this.src)">
                                 </figure>
                             </div><!-- swiper-slide end -->
 
                             <div class="swiper-slide">
                                 <figure>
-                                    <img src="img/화장품_상세페이지_도형합치기+그라데이션.jpg" alt="화장품 상세페이지"
+                                    <img src="img/Design-05.jpg" alt="화장품 상세페이지"
                                     style="cursor: pointer;" onclick="openModal(this.src)" >
                                 </figure>
                             </div><!-- swiper-slide end -->
 
-                            <div class="swiper-slide">
-                                <figure>
-                                    <img src="img/듀와뵤가게.png" alt="일러스트 이미지 " style="cursor: pointer;" onclick="openModal(this.src)" >
-                                </figure>
-                            </div><!-- swiper-slide end -->
 
                             <div class="swiper-slide">
                                 <figure>
-                                    <img src="img/animathion/해달-조개-뿌시기.gif" loop="infinite" alt="해달"
+                                    <img src="img/animathion/Design-motion-01.gif" loop="infinite" alt="해달"
                                     style="cursor: pointer;" onclick="openModal(this.src)">
                                 </figure>
                             </div><!-- swiper-slide end -->
 
                             <div class="swiper-slide">
                                 <figure>
-                                    <img src="img/animathion/듀와 듀달.gif" loop="infinite" alt="해달"
+                                    <img src="img/animathion/Design-motion-02.gif" loop="infinite" alt="해달"
                                     style="cursor: pointer;" onclick="openModal(this.src)">
                                 </figure>
                             </div><!-- swiper-slide end -->
 
                             <div class="swiper-slide">
                                 <figure>
-                                    <img src="img/animathion/왔다갔다.gif" loop="infinite" alt="캐릭터"
+                                    <img src="img/animathion/Design-motion-03.gif" loop="infinite" alt="캐릭터"
                                     style="cursor: pointer;" onclick="openModal(this.src)">
                                 </figure>
                             </div><!-- swiper-slide end -->
@@ -455,7 +458,7 @@
                     </div>
                 </div>
                 <div id="myModal" class="modal">
-                    <span class="close" onclick="colseModal()">&times;</span>
+                    <span class="close" onclick="closeModal()">&times;</span>
                     <img class="madal-content" id="img01">
                 </div>
             </div>
@@ -491,19 +494,31 @@
 
         <!-- Initialize Swiper -->
         <script>
-            var swiper = new Swiper(".mySwiper", {
+            var webDesign = new Swiper(".webDesign", {
                 slidesPerView: 2,
                 spaceBetween: 20,
                 loop: true,
                 navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-               
-                
+                    nextEl: ".web-swiper-button-next",
+                    prevEl: ".web-swiper-button-prev",
+                }, 
+            });
+            var appDesign = new Swiper(".appDesign", {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                loop: true,
+                navigation: {
+                    nextEl: ".app-swiper-button-next",
+                    prevEl: ".app-swiper-button-prev",
+                }, 
+            });
+            var motionDesign = new Swiper(".motionDesign", {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                loop: true,
             });
 
-            var swiper = new Swiper(".designSwiper", {
+            var designSwiper = new Swiper(".designSwiper", {
                 slidesPerView: 4,
                 spaceBetween: 30,
                 loop: true,
